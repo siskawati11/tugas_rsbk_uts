@@ -3,35 +3,133 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head><title>Survey Data Mahasiswa</title>
-<link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
+<link href="./css/styles.css" rel="stylesheet" type="text/css"/>
+ <style>
+    	body {
+  			background-image: url('https://cdn.idntimes.com/content-images/community/2019/08/64261072-116947755995640-4195938893528640499-n1-5ad364a10ad7962a2087a963ebbb8bb9_600x400.jpg');
+    		-webkit-background-size: cover;
+    		-moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
+			}
+		img1 {
+		  			display: block;
+		  			margin-left: auto;
+		  			margin-right: auto;
+		  			width:782.5px;
+		  			height:454.5px;
+			}
+	</style>
+	<style type="text/css">
+		#kiri
+			{
+			width:25%;
+			height:25px;
+			float:left;
+			}
+		#kanan
+			{
+			width:75%;
+			height:25px;
+			float:right;
+			}
+		#space
+			{
+			height:25px;
+			width: 1000%;
+			}
+			
+	@media (max-width: 576px) {
+	  .wrap-contact100 {
+	    padding: 62px 15px 65px 15px;
+	  }
+	}
+	
+	.wrap-contact100 {
+	  width: 500px;
+	  background-color: rgba(255, 255, 255, .5);
+	  border-radius: 10px;
+	  overflow: hidden;
+	  padding: 62px 55px 65px 55px;
+		  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+		float: center;
+	}
+
+	
+	.container-contact100 {
+	  width: 55%;  
+	  min-height: 100vh;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 15px;
+	  background-color: rgba(255, 255, 255, .5);
+	  position: relative;
+	  z-index: 1;
+	  float: center;
+	  margin: 0 auto;
+	}
+	</style>
 </h:head>
 <h:body>
+<div class="container-contact100 .center_div">
+<div class="wrap-contact100" style="width:1000px;">
 <h1 class="title">Survey Data Mahasiswa</h1>
-<div align="center">
+<br /><br />
+<div align="left">
 <h:form > 
 
 <!--<h:panelGrid columns="2" styleClass="formTable">-->
 
   <body>
-
+	
     <form align="center">
-      Nama Depan: <input type="text" name ="namadepan" placeholder="Nama depan anda..." ></input> <br/>
-      Nama Belakang: <input type="text" name ="namabelakang" placeholder="Nama belakang anda..." ></input> <br/>
-      Alamat (Kota, Kode POS, Negara Bagian): <input type="text" name="alamat" placeholder="Alamat lengkap..." ></input> <br/>
-      No. Telp : <input type="text" name="telpon" placeholder="Nomor telpon anda..." ></input><br/>
-      <br/>
-
+      <div id="kiri">Nama Depan</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name ="namadepan" placeholder="Nama depan anda..." ></input></div>
+	  <div id="kiri">Nama Belakang</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name ="namabelakang" placeholder="Nama belakang anda..." ></input></div>
+      <div id="kiri">Alamat</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name="alamat" placeholder="Alamat rumah anda..." ></input></div>
+	  <div id="kiri">Kota/Kabupaten</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name="kokab" placeholder="Kota/Kabupaten..." ></input></div>
+	  <div id="kiri">Provinsi</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name="prov" placeholder="Provinsi..." ></input></div>
+	  <div id="kiri">Kode Pos</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name="k_pos" placeholder="Kode pos anda..." ></input></div>
+	  <div id="kiri">No. Telepon</div>
+	  <div id="kanan">:&nbsp;&nbsp;<input type="text" name="telpon" placeholder="Nomor telepon anda..." ></input></div>
+      
+      <div id="kiri" style="visibility: hidden;">No. Telepon</div>
+	  <div id="kanan" style="visibility: hidden;">:&nbsp;&nbsp;<input type="text" name="telpon" placeholder="Nomor telepon anda..." ></input></div>
+      
+      <!-- Nama Depan:<input type="text" name ="namadepan" placeholder="Nama depan anda..." ></input> <br/>
+      Nama Belakang:<input type="text" name ="namabelakang" placeholder="Nama belakang anda..." ></input> <br/>
+      Alamat :<input type="text" name="alamat" placeholder="Alamat rumah anda..." ></input> <br/>
+      Kota/Kabupaten : <input type="text" name="kokab" placeholder="Kota/Kabupaten..." ></input> <br/>
+      Provinsi : <input type="text" name="prov" placeholder="Provinsi..." ></input> <br/>
+      Kode POS : <input type="text" name="k_pos" placeholder="Kode Pos anda..." ></input> <br/>
+      No. Telp : <input type="text" name="telpon" placeholder="Nomor telpon anda..." ></input><br/>-->
+      
       Hal apa yang menarik dari Universitas Diponegoro ? <br/>
       <input type = "checkbox" name = "kampus" value = "on"> Kampus </input> <br/>
       <input type = "checkbox" name = "lokasi" value = "on"> lokasi </input> <br/>
       <input type = "checkbox" name = "kamarasrama" value = "on"> Kamar Asrama</input> <br/>
       <input type = "checkbox" name = "siswa" value = "on"> siswa</input> <br/>
-
+	  <div id="space"></div>
       Darimana anda mengetahui perihal Universitas Diponegoro ? <br/>
       <input type = "radio" name = "interest" value = "teman"> Teman</input> <br/>
       <input type = "radio" name = "interest" value = "televisi"> Televisi</input> <br/>
       <input type = "radio" name = "interest" value = "internet"> Internet</input> <br/>
-
+	  <div id="space"></div>
       Akankan anda merekomendasikan Universitas Diponegoro ke lingkungan anda ? <br/>
       <select name="list">
           <option>Sangat Mungkin</option> <br/>
@@ -39,7 +137,8 @@
            <option>Tidak Mungkin</option> <br/>
           </select>
           <br/>
-        Silahkan memberi komentar dibawah ini : <br/>
+      <div id="space"></div>
+      Silahkan memberi komentar dibawah ini : <br/>
         <textarea rows = "5" cols = "50" name = "description">
            Komentar anda....
         </textarea>
@@ -53,5 +152,7 @@
 <h:commandButton value="Survey" 
                  action="hasilsurvey.xhtml"/>-->
 </h:form>
+</div>
+</div>
 </div>
 </h:body></html>

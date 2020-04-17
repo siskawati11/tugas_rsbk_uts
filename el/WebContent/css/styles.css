@@ -50,6 +50,7 @@ fieldset {
 input, textarea {
   background-color: #ecedf2;
   text-align: left;
+  
 }
 input[type="checkbox"] {
   background-color: transparent;  /* For IE -- doesn't matter in FF or Chrome */
