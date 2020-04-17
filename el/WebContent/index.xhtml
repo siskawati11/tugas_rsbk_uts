@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Survey Data Mahasiswa</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<h1 class="title">Survey Data Mahasiswa</h1>
+<div align="center">
+<h:form > 
+
+<!--<h:panelGrid columns="2" styleClass="formTable">-->
+
+  <body>
+
+    <form align="center">
+      Nama Depan: <input type="text" name ="namadepan" placeholder="Nama depan anda..." ></input> <br/>
+      Nama Belakang: <input type="text" name ="namabelakang" placeholder="Nama belakang anda..." ></input> <br/>
+      Alamat (Kota, Kode POS, Negara Bagian): <input type="text" name="alamat" placeholder="Alamat lengkap..." ></input> <br/>
+      No. Telp : <input type="text" name="telpon" placeholder="Nomor telpon anda..." ></input><br/>
+      <br/>
+
+      Hal apa yang menarik dari Universitas Diponegoro ? <br/>
+      <input type = "checkbox" name = "kampus" value = "on"> Kampus </input> <br/>
+      <input type = "checkbox" name = "lokasi" value = "on"> lokasi </input> <br/>
+      <input type = "checkbox" name = "kamarasrama" value = "on"> Kamar Asrama</input> <br/>
+      <input type = "checkbox" name = "siswa" value = "on"> siswa</input> <br/>
+
+      Darimana anda mengetahui perihal Universitas Diponegoro ? <br/>
+      <input type = "radio" name = "interest" value = "teman"> Teman</input> <br/>
+      <input type = "radio" name = "interest" value = "televisi"> Televisi</input> <br/>
+      <input type = "radio" name = "interest" value = "internet"> Internet</input> <br/>
+
+      Akankan anda merekomendasikan Universitas Diponegoro ke lingkungan anda ? <br/>
+      <select name="list">
+          <option>Sangat Mungkin</option> <br/>
+          <option>Mungkin</option> <br/>
+           <option>Tidak Mungkin</option> <br/>
+          </select>
+          <br/>
+        Silahkan memberi komentar dibawah ini : <br/>
+        <textarea rows = "5" cols = "50" name = "description">
+           Komentar anda....
+        </textarea>
+    </form>
+  </body>
+
+
+<a href="hasilsurvey.xhtml"><button><center>Survey</center></button></a>
+<!--</h:panelGrid>
+
+<h:commandButton value="Survey" 
+                 action="hasilsurvey.xhtml"/>-->
+</h:form>
+</div>
+</h:body></html>

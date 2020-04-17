@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head><title>Survey Data Mahasiswa</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<h1 class="title">Survey Data Mahasiswa</h1>
+<div align="center">
+<h:form>
+<h:panelGrid columns="2" styleClass="formTable">
+  <style> 
+    body{ 
+    background-image:url(HIJAU.jpg); 
+    background-size:cover; 
+    background-attachment: fixed; } 
+    p{ color:white; } 
+    </style>
+
+  <body>
+    <form>
+      Nama Depan: <input type="text" name ="namadepan" placeholder="Nama depan anda..." required></input> <br/>
+      Nama Belakang: <input type="text" name ="namabelakang" placeholder="Nama belakang anda..." required></input> <br/>
+      Alamat (Kota, Kode POS, Negara Bagian): <input type="text" name="alamat" placeholder="Alamat lengkap..." required></input> <br/>
+      No. Telp : <input type="text" name="telpon" placeholder="Nomor telpon anda..." required></input><br/>
+      <input type = "checkbox" name = "kampus" value = "on"> Kampus
+      <input type = "checkbox" name = "lokasi" value = "on"> lokasi
+      <input type = "checkbox" name = "kamarasrama" value = "on"> Kamar Asrama
+      <input type = "checkbox" name = "siswa" value = "on"> siswa
+
+      <input type = "radio" name = "interest" value = "teman"> Teman
+      <input type = "radio" name = "interest" value = "televisi"> Televisi
+      <input type = "radio" name = "interest" value = "internet"> Internet
+
+      <br/>
+      Apakah anda merekomendasikan UNDIP ke teman - teman ?
+      <select name = "dropdown">
+        <option value = "Sangat Mungkin" selected>Sangat Mungkin</option>
+        <option value = "Mungkin">Mungkin</option>
+        <option value = "Tidak Mungkin">Tidak Mungkin</option>
+
+        Berikan komentar anda : <br />
+        <textarea rows = "5" cols = "50" name = "description">
+           Komentar anda....
+    </form>
+  </body>
+
+</h:panelGrid>
+<input type="submit" value="Survey!" formaction="hasilsurvey.xhtml">
+</input>
+</h:form>
+</div>
+</h:body></html>
