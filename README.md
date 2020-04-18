@@ -3,7 +3,7 @@ Repositori tugas_rsbk_uts merupakan project untuk pengerjaan tugas pengganti UTS
 
 # Instalasi
 1. Import file el.war ke dalam Eclipse
-2. Jalankan the Payara server
+2. Jalankan Payara server
 3. Klik kanan pada project >> Run As >> Run on server
 4. Pada browser ketik: http://localhost:8080/el
 
