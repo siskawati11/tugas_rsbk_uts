@@ -14,6 +14,6 @@ http://52.44.246.137/
 https://rsbkuts.s3.amazonaws.com/el.zip
 
 # Nama Kelompok
-Obed Jeck Gredo Tarigan - 21120117120026
-Siskawati Sianipar - 21120117120029
-Andro Adhita Pratama - 21120117140013
+- Obed Jeck Gredo Tarigan - 21120117120026
+- Siskawati Sianipar - 21120117120029
+- Andro Adhita Pratama - 21120117140013
