@@ -1,5 +1,5 @@
-# tugas_rsbk_uts
-Merupakan project untuk pengerjaan tugas pengganti UTS mata kuliah Rekayasa Software Berbasis Komponen (RSBK).
+# Tugas RSBK
+Repositori tugas_rsbk_uts merupakan project untuk pengerjaan tugas pengganti UTS mata kuliah Rekayasa Software Berbasis Komponen (RSBK).
 
 # Instalasi
 1. Import file el.war ke dalam Eclipse
